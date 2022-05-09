@@ -1,0 +1,3 @@
+/projects/b1059/data/c_elegans/WI/alignments/BRC20067.bam
+/projects/b1059/data/c_elegans/WI/alignments/CB4856.bam
+/projects/b1059/data/c_elegans/WI/alignments/DL238.bam
