@@ -166,10 +166,7 @@ process MtDNA_str_call {
   output: 
 
   file "str_MtDNA.vcf.gz" into str_Mt
-  file "viz_MtDNA.viz.gz"
-  file "log_MtDNA.txt"
-  file "stutter_models_MtDNA.txt"
-  file "hipstr_ref_MtDNA.bed"
+
   """
 
 
