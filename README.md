@@ -1,3 +1,56 @@
 # wi-STRs
 
 A Nextflow pipeline used for STR variant calling.
+
+## Execution of pipeline using Nextflow
+```
+git clone https://github.com/AndersenLab/wi-STRs.git
+
+cd wi-STRs
+
+nextflow STR_variants_calling.nf --ref_fa=bin/c_elegans.PRJNA13758.WS276.genomic.fa --ref_str=build_ref/ref_ce.hipstr_reference.bed --bamfiles=bam_test.txt 
+
+```
+
+## Required software packages that should be in users PATH
+
+1. [nextflow-v19.07.0](https://www.nextflow.io/docs/latest/getstarted.html)
+2. [BCFtools-v1.9](https://samtools.github.io/bcftools/bcftools.html)
+3. [HipSTR-v0.7](https://github.com/tfwillems/HipSTR)
+
+## Pipeliine parameters
+
+* --ref_fa
+
+Reference genome in fasta format from WormBase https://wormbase.org/
+
+* --ref_str
+
+Reference STR in bed format
+
+* --bamfiles
+
+We use a sample sheet as the input file, including full path to bam files, see the example in `bam_test.txt`.
+
+* --email
+
+Add your email with command
+
+* --out
+
+Add result folder name. The default is "STR_Results-*date*"
+
+## Output
+
+This pipeline will generate three vcf files:
+
+STR_all_raw.vcf.gz :              The raw vcf includes all the STR variants across samples.
+
+STR_all_filtered.vcf.gz :         The filitered vcf from STR_all_raw.vcf.gz using the script [HipSTR filter_vcf.py](https://github.com/tfwillems/HipSTR/blob/master/scripts/filter_vcf.py) and recommended settings.
+
+STR_all_filtered_Fmiss01.vcf.gz:  The final vcf from STR_all_filtered.vcf.gz by filtering STR variants with equal or more than 10% missing data across all samples using BCFtools.
+
+
+
+
+
