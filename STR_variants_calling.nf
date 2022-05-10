@@ -20,16 +20,16 @@ params.out = "STR_Results-${date}"
 
 log.info ""
 log.info "------------------------------------------"
-log.info "        C. elegans STR calling pipeline "
+log.info "        STR variant calling pipeline "
 log.info "------------------------------------------"
 log.info ""
 
 
 
 log.info ""
-log.info "bam files                               = ${params.bamfiles}"
-log.info "C. elegans genome fasta                 = ${params.ref_fa}"
-log.info "C. elegans ref STR                      = ${params.ref_str}"
+log.info "bam files                          = ${params.bamfiles}"
+log.info "Genome fasta                       = ${params.ref_fa}"
+log.info "Reference STR                      = ${params.ref_str}"
 log.info ""
 
 
@@ -209,8 +209,7 @@ process merge_filter {
 
 
 
-  bcftools concat str_*.vcf.gz |\\
-  bcftools sort -Oz -o STR_all_raw.vcf.gz
+  bcftools concat str_*.vcf.gz | bcftools sort -Oz -o STR_all_raw.vcf.gz
 
   python $PWD/bin/HipSTR_filter_vcf.py --vcf STR_all_raw.vcf.gz --min-call-qual 0.9 --max-call-flank-indel 0.15 --max-call-stutter 0.15 --min-call-allele-bias -2 --min-call-strand-bias -2 > STR_filtered.vcf.gz
 
