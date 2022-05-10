@@ -63,9 +63,9 @@ STRref.sh <prefix of output> <reference genome in FASTA format>
 
 ```
 
-The script STRref.sh is built using [scripts](https://github.com/HipSTR-Tool/HipSTR-references/tree/master/scripts) and the [framework](https://github.com/HipSTR-Tool/HipSTR-references/blob/master/mouse/mouse_reference.md) on [HipSTR-references](https://github.com/HipSTR-Tool/HipSTR-references)
+The script STRref.sh is built using [scripts](https://github.com/HipSTR-Tool/HipSTR-references/tree/master/scripts) and the [framework](https://github.com/HipSTR-Tool/HipSTR-references/blob/master/mouse/mouse_reference.md) on [HipSTR-references](https://github.com/HipSTR-Tool/HipSTR-references).
 
-## Required software package
+# Required software package
 
 1. [Tandem Repeats Finder](https://tandem.bu.edu/trf/trf.html)
 
