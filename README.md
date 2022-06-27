@@ -69,3 +69,7 @@ The script STRref.sh is built using [scripts](https://github.com/HipSTR-Tool/Hip
 
 1. [Tandem Repeats Finder](https://tandem.bu.edu/trf/trf.html)
 
+
+## Citation
+["Natural variation in C. elegans short tandem repeats"](https://www.biorxiv.org/content/10.1101/2022.06.25.497600v1)
+
