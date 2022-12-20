@@ -16,7 +16,7 @@ nextflow STR_variants_calling.nf --ref_fa=bin/c_elegans.PRJNA13758.WS276.genomic
 
 1. [nextflow-v19.07.0](https://www.nextflow.io/docs/latest/getstarted.html)
 2. [BCFtools-v1.9](https://samtools.github.io/bcftools/bcftools.html)
-3. [HipSTR-v0.7](https://github.com/tfwillems/HipSTR)
+3. [HipSTR-v0.6.2](https://github.com/tfwillems/HipSTR)
 4. [bedtools-v2.29.2](https://bedtools.readthedocs.io/en/latest/)
 
 ## Pipeliine parameters
