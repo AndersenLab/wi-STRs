@@ -71,5 +71,5 @@ The script STRref.sh is built using [scripts](https://github.com/HipSTR-Tool/Hip
 
 
 ## Citation
-["Natural variation in C. elegans short tandem repeats"](https://genome.cshlp.org/content/early/2022/09/30/gr.277067.122.abstract)
+["Natural variation in C. elegans short tandem repeats"](https://genome.cshlp.org/content/32/10/1852)
 
